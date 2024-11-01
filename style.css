@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 300;
+    color: #111;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/bg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .content {
+    text-align: center;
+    max-width: 900px;
+}
+
+.banner .content h2 {
+    font-size: 5em;
+    font-weight: 500;
+    color: #fff;
+    line-height: 80px;
+    text-shadow: 0 2px 10px #000;
+}
+
+.banner .content h2 span {
+    font-weight: 700;
+    color: #00aad4;
+    text-shadow: 0 2px 10px #000;
+}
+
+.banner .content p {
+    color: #fff;
+    text-shadow: 0 2px 10px #000;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00aad4;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 1em;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    letter-spacing: 6px;
+}
+
+section {
+    padding: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 15px 100px;
+}
+
+header .logo img {
+    position: relative;
+    max-width: 300px;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 40px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #00aad4;
+    transition: 0.5s;
+}
+
+header .navigation li a:hover {
+    color: #00ccff;
+}
+
+header.sticky .navigation li a:hover {
+    color: #000;
+}
+
+.titleText {
+    color: #000;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.titleText span {
+    color: #00aad4;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.about .content {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .content .col {
+    position: relative;
+    width: 48%;
+}
+
+.about .content .col p {
+    text-align: justify;
+}
+
+.about .content .col .imgBx {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+
+.about .content .col .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.character .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.character .content .box {
+    position: relative;
+    width: 340px;
+    margin: 20px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.character .content .box:hover .detail {
+    top: 0;
+}
+
+.character .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 420px;
+}
+
+.character .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.character .content .box h3 {
+    position: relative;
+    margin-top: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 400;
+}
+
+.character .content .box h3 span {
+    color: #00aad4;
+    font-weight: 700;
+}
+
+.character .content .box .detail {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: linear 0.5s;
+}
+
+.character .content .box .detail p {
+    font-weight: 500;
+    text-align: justify;
+}
+
+.film .content {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.film .content .box {
+    position: relative;
+    width: 320px;
+    margin: 20px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.film .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.film .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.film .content .box .name {
+    margin-top: 10px;
+}
+
+.film .content .box .viewFilm {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.film .content .box .viewFilm a {
+    padding: 10px 15px;
+    background: #00aad4;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1em;
+    color: #fff;
+    transition: linear 0.5s;
+}
+
+.film .content .box .viewFilm a:hover {
+    color: #00aad4;
+    background: #000;
+}
+
+.rate {
+    background: url(images/bg3.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.rate .title .titleText {
+    color: #fff;
+}
+
+.rate .title p {
+    color: #fff;
+    text-shadow: 0 5px 15px rgb(0, 0, 0);
+}
+
+.rate .content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rate .content .box {
+    position: relative;
+    width: 280px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #fff;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+}
+
+.rate .content .box .imgBx {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.rate .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rate .content .box .text {
+    margin-top: 10px;
+}
+
+.rate .content .box .text p {
+    font-weight: 400;
+}
+
+.rate .content .box .text p span {
+    color: #fff;
+    font-weight: 700;
+}
+
+.contact {
+    background: url(images/bg2.jpg);
+    background-size: cover;
+}
+
+.contact .title .titleText {
+    color: #fff;
+}
+
+.contact .title p {
+    color: #fff;
+    text-shadow: 1px 1px 10px #000;
+}
+
+.contact .content .contactForm {
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contact .contactForm h3 {
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contact .contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact .contactForm .inputBox input,
+.contact .contactForm .inputBox textarea {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contact .contactForm .inputBox input[type="submit"] {
+    font-size: 1em;
+    color: #fff;
+    background: #00aad4;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact .contactForm .inputBox input[type="submit"]:hover {
+    letter-spacing: 6px;
+}
+
+.copyrightText {
+    padding: 8px 40px;
+    text-align: center;
+}
+
+.copyrightText p {
+    color: #333;
+}
+
+.copyrightText a {
+    color: #00aad4;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.copyrightText a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+    header {
+        padding: 40px 60px;
+    }
+    
+    header.sticky {
+        background: #fff;
+        padding: 15px 60px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    section {
+        padding: 80px 20px;
+    }
+
+    header, 
+    header.sticky {
+        padding: 10px 20px;
+    }
+
+    header .navigation {
+        position: fixed;
+        top: 68px;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: ease-in-out 0.5s;
+    }
+
+    header .navigation li {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    header .navigation li a {
+        font-size: 1.5em;
+    }
+
+    header .navigation li a:hover {
+        color: #000;
+    }
+
+    header .navigation.active {
+        right: 0;
+    }
+
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        cursor: pointer;       
+    }
+
+    .toggle::before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        color: #00aad4;
+        font-size: 2em;  
+    }
+
+    .toggle.active::before {
+        content: '\f00d';
+    }
+
+    .banner .content h2 {
+        font-size: 3em;
+        line-height: normal;
+    }
+
+    .about .content {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .about .content .col {
+        width: 100%;
+    }
+
+    .about .content .col:nth-child(1) {
+        margin-bottom: 20px;
+    }
+
+    .character .content .box .detail p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 540px) {
+    section {
+        padding: 60px 10px;
+    }
+
+    header .navigation {
+        top: 55px;
+    }
+
+
+    header .logo img {
+        max-width: 200px;
+    }
+
+    .about .content .col p {
+        text-align: left;
+    }
+}
